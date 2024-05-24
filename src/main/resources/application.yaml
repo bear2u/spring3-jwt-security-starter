@@ -10,10 +10,11 @@ spring:
     properties:
       hibernate.show_sql: false
       hibernate.dialect.storage_engine: innodb
+      hibernate.dialect: org.hibernate.dialect.MySQLDialect
   datasource:
     password: starterspringkotlin
-    username: starterspringkotlin
-    url: jdbc:mysql://localhost:3306/starterspringkotlin?ssl-mode=REQUIRED
+    username: root
+    url: jdbc:mysql://localhost:3306/starterspringkotlin
   sql:
     init:
       mode: always
@@ -24,8 +25,8 @@ server:
   http2:
     enabled: true
   port: 4080
-  servlet:
-    context-path: /starter-test
+#  servlet:
+#    context-path: /starter-test
 jwt-security:
   secret: PseudoSecret-Pseudosecret-IMPORTANT-Please-Use-Ur-Own-Key-IMPORTANT
   expiration-time: 365
@@ -63,16 +64,16 @@ spring:
     init:
       mode: always
       continue-on-error: false
----
-spring:
-  datasource:
-    password: starterspringkotlin
-    username: starterspringkotlin
-    url: jdbc:mysql://host.docker.internal:3306/starterspringkotlin?ssl-mode=REQUIRED
-  config:
-    activate:
-      on-profile: docker
-server:
-  port: 8888
-  servlet:
-    context-path: /starter-test
+#---
+#spring:
+#  datasource:
+#    password: starterspringkotlin
+#    username: root
+#    url: jdbc:mysql://localhost:3306/starterspringkotlin
+#  config:
+#    activate:
+#      on-profile: docker
+#server:
+#  port: 8888
+#  servlet:
+#    context-path: /starter-test

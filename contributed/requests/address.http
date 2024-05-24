@@ -7,7 +7,7 @@ GET https://postman-echo.com/get?foo1=bar1&foo2=bar2
 %}
 
 ### Login and get Bearer
-POST http://localhost:{{port}}/starter-test/login
+POST http://localhost:{{port}}/login
 Content-Type: application/json
 
 {

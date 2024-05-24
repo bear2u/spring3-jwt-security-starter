@@ -56,7 +56,12 @@ class WebConfig(
       }
       .authorizeHttpRequests { authorizeRequests ->
         authorizeRequests
-          .requestMatchers("/api/**").permitAll()
+          .requestMatchers(
+            "/api/**",
+            "/swagger-ui/**",
+            "v3/api-docs/**"
+            //http://localhost:4080/starter-test/swagger-ui/index.html
+          ).permitAll()
           .requestMatchers(HttpMethod.GET, "/actuator/health/**").permitAll()
           .requestMatchers(HttpMethod.GET, "/actuator/info/**").permitAll()
           .requestMatchers(HttpMethod.POST, "/login").permitAll()
