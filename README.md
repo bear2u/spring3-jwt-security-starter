@@ -2,6 +2,8 @@
 
 https://github.com/osahner/kotlin-spring-boot-rest-jpa-jwt-starter
 
+추가로 OPEN API (Swagger 추가 버전)
+
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=osahner_kotlin-spring-boot-rest-jpa-jwt-starter)](https://sonarcloud.io/summary/new_code?id=osahner_kotlin-spring-boot-rest-jpa-jwt-starter)
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=osahner_kotlin-spring-boot-rest-jpa-jwt-starter&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=osahner_kotlin-spring-boot-rest-jpa-jwt-starter)
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=osahner_kotlin-spring-boot-rest-jpa-jwt-starter&metric=bugs)](https://sonarcloud.io/summary/new_code?id=osahner_kotlin-spring-boot-rest-jpa-jwt-starter)
